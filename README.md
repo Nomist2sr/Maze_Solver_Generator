@@ -41,6 +41,7 @@ This project aims to implement **mazes resolution algorithms** and **maze genera
   * Generate a maze.txt with **X** and **Y** given as arguments and place it into the **Unsolved** directory
 * Option 4 :
   * Exit game
+  * 'Ctrl+C' is handled
 
 ## Run project
 
