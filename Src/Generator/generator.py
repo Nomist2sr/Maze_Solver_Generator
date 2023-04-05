@@ -26,7 +26,7 @@ class Generator(object):
     # Methods
     def generate_maze(self):
         width = random.randint(3, 100)
-        height = random.randint(2, 100)
+        height = random.randint(3, 100)
         maze = [['#']*width for _ in range(height)]
         start = (1, 1)
         end = (height-2, width-2)
