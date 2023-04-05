@@ -12,7 +12,7 @@ class Menu(object):
     # Initialization
     def __init__(self) -> None:
         self._option = 0
-        self._id_txt = 4
+        self._id_txt = 0
 
 
     def __str__(self) -> str:
@@ -53,8 +53,9 @@ class Menu(object):
                     self.launch_game()
                 case '3':
                     generator = Generator()
+                    self._id_txt = generator.get_current_id()
                     generator.generator(self._id_txt)
-                    self._id_txt += 1
+                    self._id_txt = generator.increment_current_id()
                     self.launch_game()
                 case '4':
                     print("\nBye !")

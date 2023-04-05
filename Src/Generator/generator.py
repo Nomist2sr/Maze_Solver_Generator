@@ -65,8 +65,18 @@ class Generator(object):
 
 
     def get_current_id(self) -> int:
-        with open('./id.txt', 'r') as f:
-            id = f.readlines()
+        with open("./id.txt", 'r') as f:
+            current = "".join(f.readlines())
+        return int(current)
+
+
+    def increment_current_id(self) -> int:
+        with open("./id.txt", 'r') as f:
+            current = "".join(f.readlines())
+        id = int(current) + 1
+        with open("./id.txt", 'w') as file:
+            file.write(str(id))
+        return id
 
 
     def create_maze_txt(self, id_txt) -> None:
