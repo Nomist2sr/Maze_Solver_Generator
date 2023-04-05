@@ -1,11 +1,11 @@
 # Ausy POEI : Maze in python
 
-<a href="https://img.shields.io/badge/Python-3.11.2-4483B5" alt="Python">
-        <img src="https://img.shields.io/badge/Python-3.11.2-4483B5" /></a>
-<a href="https://img.shields.io/badge/pip-23.0.1-FFE05B" alt="NPM">
-        <img src="https://img.shields.io/badge/pip-23.0.1-FFE05B" /></a>
-<a href="https://img.shields.io/badge/MADE%20WITH-SQLite3-183866" alt="NPM">
-        <img src="https://img.shields.io/badge/MADE%20WITH-SQLite3-183866" /></a>
+<a href="https://img.shields.io/badge/python3-3.11.2-4483B5" alt="Python">
+        <img src="https://img.shields.io/badge/python3-3.11.2-4483B5" /></a>
+<a href="https://img.shields.io/badge/pip3-23.0.1-FFE05B" alt="NPM">
+        <img src="https://img.shields.io/badge/pip3-23.0.1-FFE05B" /></a>
+<a href="https://img.shields.io/badge/SQLite3-183866" alt="NPM">
+        <img src="https://img.shields.io/badge/SQLite3-183866" /></a>
 
 ---
 
