@@ -49,7 +49,7 @@ This project aims to implement **mazes resolution algorithms** and **maze genera
 
 * Check if **Unsolved** is empty
 * Check if a .txt is already in **Solved**
-* Directory **__Backup** to have at least 3 solvable mazes
+* Directory **__Backup** to have at least 3 mazes to solve
 * Invalid option for the **Menu**
 
 ## Run project
