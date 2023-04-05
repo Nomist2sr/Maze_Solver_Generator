@@ -40,7 +40,7 @@ This project aims to implement **mazes resolution algorithms** and **maze genera
 * Option 3 :
   * Generate a maze.txt with **X** and **Y** given randomly and place it into the **Unsolved** directory
   * The new maze is with the format : "maze_" + `<id>` +".txt"
-  * The `<id>` is incremented int
+  * The `<id>` is incremented int stocked in a file to avoid creation of an existing maze
 * Option 4 :
   * Exit game
   * 'Ctrl+C' is handled
