@@ -33,15 +33,24 @@ This project aims to implement **mazes resolution algorithms** and **maze genera
   * Display solved mazes datas from the SQL database
   * Format :  `<file_name>; <date>; <time>`
 * Option 2 :
-  * Load randomly 1 maze form the **Unsolved** directory and solve it
+  * Load randomly 1 maze form the **Unsolved** directory and solve it with the recursive algorithm
   * Display the maze solution
   * Save the **Date, Time** and **Name** of the maze solved
   * Move the maze into the **Solved** directory
 * Option 3 :
-  * Generate a maze.txt with **X** and **Y** given as arguments and place it into the **Unsolved** directory
+  * Generate a maze.txt with **X** and **Y** given randomly and place it into the **Unsolved** directory
+  * The new maze is with the format : "maze_" + `<id>` +".txt"
+  * The `<id>` is incremented int
 * Option 4 :
   * Exit game
   * 'Ctrl+C' is handled
+
+#### Error Management
+
+* Check if **Unsolved** is empty
+* Check if a .txt is already in **Solved**
+* Directory **__Backup** to have at least 3 solvable mazes
+* Invalid option for the **Menu**
 
 ## Run project
 
