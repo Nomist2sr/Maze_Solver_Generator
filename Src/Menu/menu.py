@@ -43,6 +43,7 @@ class Menu(object):
             self._option = input()
             match self._option:
                 case '1':
+                    print("\nNo save for the moment... :(")
                     # save = Save()
                     # save.display_database()
                     self.launch_game()
