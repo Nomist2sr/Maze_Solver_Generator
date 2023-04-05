@@ -59,5 +59,5 @@ python3 __start__.py
 
 ## Authors
 
-* **Yoann Le Saint**
 * **Simon Tessier**
+* **Yoann Le Saint**
