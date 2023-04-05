@@ -24,7 +24,7 @@ class Generator(object):
 
 
     # Methods
-    def generate_maze(self):
+    def generate_maze(self) -> None:
         width = random.randint(3, 100)
         height = random.randint(3, 100)
         maze = [['#']*width for _ in range(height)]
@@ -64,12 +64,17 @@ class Generator(object):
         self._maze = maze_str
 
 
-    def create_maze_txt(self, id_txt):
+    def get_current_id(self) -> int:
+        with open('./id.txt', 'r') as f:
+            id = f.readlines()
+
+
+    def create_maze_txt(self, id_txt) -> None:
         self._txt_name = "maze_" + str(id_txt) + ".txt"
         print("\n{} created !".format(self._txt_name))
 
 
-    def generator(self, id_txt):
+    def generator(self, id_txt) -> None:
         self.generate_maze()
         self.create_maze_txt(id_txt)
         with open(self._txt_name, 'w') as file:

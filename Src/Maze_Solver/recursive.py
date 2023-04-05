@@ -39,7 +39,7 @@ class Recursive(object):
 
 
     # Methods
-    def get_maze(self):
+    def get_maze(self) -> list:
         with open(self._maze_path, 'r') as f:
             mat = f.readlines()
             line = [element.split('\n')[0] for element in mat]
@@ -48,7 +48,7 @@ class Recursive(object):
         return maze
 
 
-    def solve_maze(self, maze, row, col):
+    def solve_maze(self, maze, row, col) -> bool:
         if row == len(maze)-1 and col == len(maze[0])-1:
             maze[row][col] = 'o'
             return True
@@ -67,14 +67,14 @@ class Recursive(object):
         return False
 
 
-    def write_solution(self):
+    def write_solution(self) -> None:
         with open(self._maze_path, 'w') as file:
             for row in self._maze:
                 for c in row:
                     file.write(c)
                 file.write('\n')
 
-    def move_maze(self):
+    def move_maze(self) -> None:
         if not os.path.exists("./Solved/" + self._maze_name):
             shutil.move(self._maze_path, "./Solved/")
         else:
@@ -82,7 +82,7 @@ class Recursive(object):
             print("\nMaze is already solved, so I deleted it in the 'Unsoved' directory :)")
 
 
-    def display_path(self):
+    def display_path(self) -> None:
         if (self._maze_name != "empty"):
             maze = self.get_maze()
             self._maze = maze

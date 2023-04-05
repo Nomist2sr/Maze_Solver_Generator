@@ -37,7 +37,7 @@ class Menu(object):
                "Your Choice : ", end = '')
 
 
-    def launch_game(self):
+    def launch_game(self) -> None:
         self.display_menu()
         while (True):
             self._option = input()

@@ -25,7 +25,7 @@ class Save(object):
 
 
     # Methods
-    def creation_save(self):
+    def creation_save(self) -> None:
         try:
             conn = sqlite3.connect('archive.sqlite')
             cur = conn.cursor()
@@ -49,7 +49,7 @@ class Save(object):
         return cur.lastrowid
 
 
-    def display_database(self):
+    def display_database(self) -> None:
         print("Mazes database")
         sql = ''' SELECT file_name, date_solved, time_execute FROM archive '''
         cur = self._conn.cursor()
@@ -59,13 +59,13 @@ class Save(object):
             print(row)
 
 
-    def delete(self):
+    def delete(self) -> None:
         cur = self._conn.cursor()
         cur.execute(''' DROP TABLE IF EXISTS archive ''')
         self.creation_save()
 
 
-    def close(self):
+    def close(self) -> None:
         self._conn.close()
 
 
