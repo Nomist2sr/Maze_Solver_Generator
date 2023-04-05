@@ -87,6 +87,7 @@ class Recursive(object):
             maze = self.get_maze()
             self._maze = maze
             self.solve_maze(maze, 0, 0)
+            print('')
             for row in maze:
                 print(''.join(row))
             self.write_solution()

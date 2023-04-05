@@ -75,4 +75,3 @@ class Generator(object):
         with open(self._txt_name, 'w') as file:
             file.write(self._maze)
         shutil.move(("./" + self._txt_name), './Unsolved/')
-

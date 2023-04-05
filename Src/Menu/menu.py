@@ -56,8 +56,8 @@ class Menu(object):
                     self._id_txt += 1
                     self.launch_game()
                 case '4':
-                    print("Bye !")
+                    print("\nBye !")
                     exit(0)
                 case _:
-                    print("Please choose a valid option :)")
+                    print("\nPlease choose a valid option :)")
                     self.display_menu()
