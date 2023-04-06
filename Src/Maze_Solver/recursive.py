@@ -74,6 +74,7 @@ class Recursive(object):
                     file.write(c)
                 file.write('\n')
 
+
     def move_maze(self) -> None:
         if not os.path.exists("./Solved/" + self._maze_name):
             shutil.move(self._maze_path, "./Solved/")
